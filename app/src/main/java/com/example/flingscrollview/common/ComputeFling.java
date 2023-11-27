@@ -8,6 +8,7 @@ import android.view.animation.Interpolator;
 
 /**
  * 计算出当前惯性，产生的总距离 和 持续时间
+ * 再配合ValueAnimator使用，实现惯性效果
  */
 public class ComputeFling {
 
