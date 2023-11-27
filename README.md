@@ -9,6 +9,7 @@ Android自定义 View惯性滚动效果（不使用Scroller）
 <br/>
 
 ## 1. 粗糙版本
+<img src="01.gif" alt="01" width="350">
 * FlingTask(核心类)
 ```
 /**
@@ -130,7 +131,6 @@ public class FlingTask implements Runnable {
     }
 }
 ```
-<img src="01.gif" alt="01" width="350">
 <br/>
 <br/>
 
