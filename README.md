@@ -6,11 +6,12 @@ Android自定义 View惯性滚动效果（不使用Scroller）
   原理很简单：使用VelocityTracker（速度跟踪器），拿到初始速度**逐步递减，直至停止**的过程。
   我写了两个版本：**粗糙版本** 和 **RecyclerView版本**，区别在于，前者是逐步递减过程是我自己算的，后者是我将RecyclerView里面惯性运动相关的代码，扒了出来进行封装，**推荐使用后者**。
 <br/>
-<br/>
 
 ## 1. 粗糙版本
 <img src="01.gif" alt="01" width="350">
+
 * FlingTask(核心类)
+
 ```
 /**
  * 惯性任务
