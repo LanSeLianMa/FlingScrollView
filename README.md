@@ -7,10 +7,14 @@ Android自定义 View惯性滚动效果（不使用Scroller）
   我写了两个版本：**粗糙版本** 和 **RecyclerView版本**，区别在于，前者是逐步递减过程是我自己算的，后者是我将RecyclerView里面惯性运动相关的代码，扒了出来进行封装，**推荐使用后者**。
 
 ## 粗糙版本
-
+<img src="01.gif" alt="01" width="350">
+<br/>
+<br/>
 
 ## RecyclerView版本
-
+<img src="02.gif" alt="02" width="350">
+<br/>
+<br/>
 
 
 
