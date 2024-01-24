@@ -80,7 +80,13 @@ public class LinerScrollView extends LinearLayout {
      */
     private void translationViewY(int offsetY) {
         if (listMaxOffsetY == 0) {
-            listMaxOffsetY = (350 * 50) - getHeight();
+            // for (int i = 0; i < 50; i++) {
+            //    TextView textView = new TextView(getContext());
+            //    ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 350);
+            //    ... ...
+            // }
+            // 350 是列表项的高度，50 是总数量，具体代码都在initView()函数里面
+            listMaxOffsetY = (350 * 50) - getHeight(); // 这里控制，列表Y轴最大偏移距离
         }
 
         if (mScrollState == SCROLL_STATE_DRAGGING) {
